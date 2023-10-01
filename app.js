@@ -28,27 +28,10 @@ document.addEventListener("turbo:load", function() {
 	/* load script after turbolink loaded page */
 
 	/* check if have mobile ?m=1 > redirect to ?m=0 (fix double request event turbo:load) */
-var uri = window.location.toString();
-if (uri.indexOf("%3D","%3D") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("%3D"));
-window.history.replaceState({}, document.title, clean_uri);
-}
-var uri = window.location.toString();
-if (uri.indexOf("%3D%3D","%3D%3D") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("%3D%3D"));
-window.history.replaceState({}, document.title, clean_uri);
-}
-var uri = window.location.toString();
-if (uri.indexOf("&m=1","&m=1") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("&m=1"));
-window.history.replaceState({}, document.title, clean_uri);
-}
-var uri = window.location.toString();
-if (uri.indexOf("?m=1","?m=1") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("?m=1"));
-window.history.replaceState({}, document.title, clean_uri);
-}				
-
+	if (window.location.href.indexOf("?m=1") > -1) {
+		window.location.href = window.location.href.replace("?m=1", "?m=0");	
+	}					
+var uri = window.location.toString();if (uri.indexOf("?m=1","?m=0") > 0) {var clean_uri = uri.substring(0, uri.indexOf("?m=0"));window.history.replaceState({}, document.title, clean_uri); };
 	/* get page_type */
 	is_page = $("meta[name='is_page']").attr('content');			
 
@@ -500,7 +483,6 @@ function copyThis(data) {
 	/* show message */
 	showToast('Success Copy');
 }		  
-
 var homePage = "https://www.score808.eu.org/",
   numPosts = 20;
 
