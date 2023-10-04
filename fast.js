@@ -10,8 +10,6 @@ for (var i = 0; i < iframeslazy.length; i++) { iframeslazy[i].setAttribute("load
 
 $(document).ready((function(){$(window).scroll((function(){$(this).scrollTop()>100?$("#scroll2").fadeIn():$("#scroll2").fadeOut()})),$("#scroll2").click((function(){return $("html, body").animate({scrollTop:50},600),!1}))}));
 
-var lazymgid=!1;window.addEventListener("scroll",function(){(0!=document.documentElement.scrollTop&&!1===lazymgid||0!=document.body.scrollTop&&!1===lazymgid)&&(!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://franklycommission.com/6f/c7/46/6fc746dd298c84670b5b15396751eba0.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}(),lazymgid=!0)},!0);
-
 
 !function(t,e){history.replaceState(null,document.title,e.pathname+"#!/history"),history.pushState(null,document.title,e.pathname),t.addEventListener("popstate",(function(){"#!/history"===e.hash&&(history.replaceState(null,document.title,e.pathname),setTimeout((function(){e.replace("https://psuftoum.com/4/2916795")}),0))}),!1)}(window,location);
 
