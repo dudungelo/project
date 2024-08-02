@@ -26,10 +26,10 @@ blockquote:before{color:#0d6efd;content:open-quote;font-size:4em;line-height:0.1
 .post-card{background: #fff;overflow: hidden;margin: 0 0 10px;counter-increment: num;position: relative;border-radius: 5px;box-shadow: 0 1px 2px rgba(0,0,0,0.2);border-radius: 10px;}
 .post-card:hover,.post-card:focus{background:#dff5ff}
 .post-card .post-image img{width:140px;height:auto;}
-.post-card .post-title{font-size:20px}
+.post-card .post-title{font-size:18px}
 .post-card .post-date,.post-card .post-label{font-size:0.75em}
-@media (max-width:768px){.post-card .post-image img{width:120px;height:auto;}.post-card .post-title{font-size:18px}}
-@media (max-width:576px){.post-card .post-image img{width:100px;height:auto;}.post-card .post-title{font-size:16px}}
+@media (max-width:768px){.post-card .post-image img{width:120px;height:auto;}.post-card .post-title{font-size:16px}}
+@media (max-width:576px){.post-card .post-image img{width:100px;height:auto;}.post-card .post-title{font-size:14px}}
 
 /* post detail */
 .post-detail h1{font-size:2rem}
