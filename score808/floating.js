@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Create button element
   const ytButton = document.createElement("a");
-  ytButton.href = "https://official.score808.my.id/search";
+  ytButton.href = "https://official.score808.my.id/p/football-today-match.html";
   ytButton.target = "_blank";
   ytButton.className = "youtube-button";
 
